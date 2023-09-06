@@ -99,7 +99,7 @@ class LocaleAllowedValidator extends ConstraintValidator
         if (null !== $this->allowedLocalesProvider) {
             return $this->allowedLocalesProvider->getAllowedLocales();
         } else {
-            array();
+            return array();
         }
     }
 }
